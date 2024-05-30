@@ -11,3 +11,15 @@
 I have forked the github repo link, check these for install instructions
 
 ** Notes
+
+- *why*
+
+  configuration.nix  is just a nix module which doesn't define options, like others do , so we can pass args to it as per modules , somewhat like import option. Except that unlike other options which are evaled laziely, import is evaled laziely. Whichever way I modularise the system. This one defines custom attrs eg userSettings ( helps with server setup for ssh login, so long as its safe, or so I like to think), another possibly good option was writing a lib to define who calls who , when and how and passing args (*AFAIK*) , functionally it shouldn't be any different.
+
+- *fun fact*
+  - if you ssh to host as FROM $HOME USER, yoou can! That key is added to $HOMEDIRECTORY/.ssh/known_hosts. These keys are same as $HOSTKEYS except the root@hist suffix/ comment to key. I belive this  and *not* $HOME/.ssh/id_rsa.pub need be the key which one need to keep passwd immutable.I am testing it atm and update here.
+
+  - *DO NOTS* `permirootlogin` even if you want to you these keys to auth , boot, sudo, does whatever.
+  - Don't use nix-shell for pkgs you need during install , I ll add my original configuration.nix sometime, which has the bare minimum I needed. That'll give you symlinks in /nix/store , which you might have a hard time GC' ing
+  - It's best if you use nano during the install and edit flake.nix the min. You can  
+  - since hyprland flake input isn't added initialially, ofc hyprland-plugins input can't fallow it , you need comment that out and later uncomment and build again st it can follow.
