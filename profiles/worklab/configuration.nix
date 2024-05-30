@@ -3,7 +3,7 @@
 {
   imports = [ ../homelab/base.nix
               ( import ../../system/security/sshd.nix {
-                authorizedKeys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBW6X3nd54sLK5UOvkyxBZ0dC57+xXKsAkr6XyP3k64gsFNahIYZGyZ+E9DdGIP1SZPDkwlcnGfFTPo/dPq5QjxtBmAOd/q4hIb5mqojNfOwqZQVwHjzLYSiGBaMVe4XAGCoNxTwXTimVU8wtyvlmBJzuOLmxZq9tRBpN3g+PT5HT1S9mrrQ4l5Y+2CNTwfga6/+/H1g4hpYG6H9qdIWOrel1hWvGUH3A1d/5mJIx3GkOAl7WBReQNbwlTm/8mkIcNBMtp3JQg5yuTQ6dLGwMOspMB5sGSCnaDx6CrelQglRihxkunW9ktA2MYaIn3l5fNwaHilW63d0sb9Y/Rr/bFKybmGYVY4PR9+tQg4D4YqofkSfRKmB98dtxUZg4yduXjxCYrhDTDseCjXACncItdD9TmxabaBQtWiWIGmX3bhx31SoctwdpS+mzbB5WVIVb/Fo/cOvPj6ugB5ZQf2uH+U5nsGVYsSsNGS1zVDybeILr1z2ne2AcaqwB5Z7iz/E0=" ];
+                authorizedKeys = [ " ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwJK9W/L0UuCFzaE9E96QfQx36VH8/0FMjL+prhw3lxLnw0QFe6Lf2PMwYXeeOEzEZlMf0M1Dx5G42677UAeW/7KiyKqoNTyTLW2ttgomzZ//an9564rjnFzXBJH6UEVRPPJ1pXOwAaVhEMxUBhLrcSSmvKyuLUMpLSKLV/r3ycDpCEJIfDF8GlR5h28N1p/7ZUu5Qdfc/ktWZggSlshqXDP/xtbUgwpcT/eXXEFPrBdEAp4+KXLQHADAkMYsZfA7LPIIhGRvSBP4+44LOR3vhQgOiq+y93I6w8EZ1vka8Cq0/6ocvy4Lc1bxXMx2qu0x/x46I16TfaKQzK+vT7gSSe62c+E7ax3v/kVmKpgTgg8oWCgFGmluRW8FJrmKeGyh2H2TWuSOYhM9CmCfn9hqpJXtGGp0AyGXeRaO3TnvCLPK12OClXACxzEluh5JYipNje82yhun3pRzTdDcE/dMOW4H1W2nBFO52VKwopu/GzGuii4dFsbvTGDpgTkD9mV9lmXeVibb46JifuoDvL2nRZELO46eYIy7JuktDh90MMI2SKo3Pe0pkPyGeyibl0vSjaDFPi/X+JfN/PxYu++FUIScpG9E4IYduJbopZxZlzfZAyYuLaYiPUhn03al/+X9GONYUiRRIQNn/YG1R8WISpyaI08Dp3QA2qvMkCJEhBQ== " ];
                 inherit userSettings; })
             ];
 }
